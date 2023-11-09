@@ -10,20 +10,19 @@
       if (parts.length === 2) return parts.pop().split(";").shift();
     }
 
-    // Read Fname and email from cookies
-    const Fname = getCookie("Fname");
-    const email = getCookie("email");
+    // Read scLeadName and scLeadEmail from cookies
+    const scLeadName = getCookie("scLeadName");
+    const scLeadEmail = getCookie("scLeadEmail");
 
     // Base Calendly URL
-    // Change this URL to the Your Calendar URL
     let calendlyUrl = "https://calendly.com/marketandgrow/test?hide_gdpr_banner=1";
 
-    // Add Fname and email to Calendly URL if they are defined
-    if (Fname !== undefined) {
-      calendlyUrl += `&name=${Fname}`;
+    // Add scLeadName and email to Calendly URL if they are defined
+    if (scLeadName !== undefined) {
+      calendlyUrl += `&name=${scLeadName}`;
     }
-    if (email !== undefined) {
-      calendlyUrl += `&email=${email}`;
+    if (scLeadEmail !== undefined) {
+      calendlyUrl += `&email=${scLeadEmail}`;
     }
 
     // Create Calendly div
