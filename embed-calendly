@@ -1,4 +1,8 @@
- <div id="calendly-container">
+//Before you use this code, make sure you update the calendly url to your url.
+//also check if you need to hide or display gdpr banner
+//since this is an embed, I believe you can keep it turned off
+
+<div id="calendly-container">
     <!-- Calendly widget will be inserted here -->
   </div>
 
